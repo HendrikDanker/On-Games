@@ -5,6 +5,7 @@ public class MyGame : Game
 {
 	public MyGame() : base(800, 600, false)		// Create a window that's 800x600 and NOT fullscreen
 	{
+		//TEST GITHUB MYGAME
 	}
 
 	void Update()
