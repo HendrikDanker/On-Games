@@ -63,7 +63,6 @@
     <Compile Include="GXPEngine\Utils\Time.cs" />
     <Compile Include="GXPEngine\Utils\Utils.cs" />
     <Compile Include="Player.cs" />
-    <Compile Include="PowerupJump.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GXPEngine\" />
