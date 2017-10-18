@@ -9,7 +9,6 @@ public class MyGame : Game
 		//TEST GITHUB MYGAME
 		_level = new Level();
 		AddChild( _level );
-
 	}
 
 	void Update()

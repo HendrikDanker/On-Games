@@ -1,10 +1,9 @@
 ﻿using System;
 using GXPEngine;
 
-public class Player : AnimationSprite
+public class Player : Entity
 {
-	float ySpeed;
-	float xSpeed;
+
 	float xSpeedMax = 5.0f;
 	float xSpeedInc = 0.5f;
 	float grav = 0.5f;
@@ -24,9 +23,13 @@ public class Player : AnimationSprite
 	int animationFrameDelay = 8;
 	private int animationStep;
 
+<<<<<<< HEAD
+	public Player() : base( "player.png", 4, 1, EntityType.Player )
+=======
 
 	public Player() : base("player_all.png", 23, 1)
 
+>>>>>>> 7c69aab6556b4a3a196ac24ba2e2a7323dd455bd
 	{
 		x = 100;    //Starting Position X
 		y = 600;    //Starting Position Y
@@ -66,14 +69,12 @@ public class Player : AnimationSprite
 	{
 		if (Input.GetKey( Key.D ) || Input.GetKey( Key.RIGHT ))
 		{
-			if (xSpeed < xSpeedMax)
-			{
-				xSpeed += xSpeedInc;
-			}
-			x += xSpeed;
+			TryMove( xSpeed, 0 );
 		}
 		//Moing Left
 		if (Input.GetKey( Key.A ) || Input.GetKey( Key.LEFT ))
+<<<<<<< HEAD
+=======
 		{
 			if (xSpeed > -xSpeedMax)
 			{
@@ -99,10 +100,12 @@ public class Player : AnimationSprite
 
 		//Double Jumping
 		if (doubleJumpTime > 0 && ySpeed != 0 && Input.GetKeyDown( Key.SPACE ) && hasJumped == false)
+>>>>>>> 7c69aab6556b4a3a196ac24ba2e2a7323dd455bd
 		{
-			ySpeed -= jumpHeight;
-			hasJumped = true;
+			TryMove( -xSpeed, 0 );
 		}
+<<<<<<< HEAD
+=======
 
 		//Save old Stats for later comparison
 		oldX = x;
@@ -139,6 +142,7 @@ public class Player : AnimationSprite
 			}
 		}
 		return true;
+>>>>>>> 7c69aab6556b4a3a196ac24ba2e2a7323dd455bd
 	}
 
 	private bool resolveCollision( Sprite collisionObject, float moveX, float moveY )

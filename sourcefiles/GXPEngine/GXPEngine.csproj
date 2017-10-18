@@ -70,6 +70,11 @@
     <Compile Include="LayerType.cs" />
 
     <Compile Include="Player.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="EnitytType.cs" />
+    <Compile Include="Pickup.cs" />
+    <Compile Include="PickupType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GXPEngine\" />

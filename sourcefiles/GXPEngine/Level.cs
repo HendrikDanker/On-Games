@@ -8,11 +8,15 @@ namespace GXPEngine
 		private Player _player;
 		private GameObject _focus;
 		private LevelCreator _levelCreator;
+		private Player _player;
 		public Level()
 		{
 			_levelCreator = new LevelCreator();
 			_player = new Player();
 			AddChild( _levelCreator );
+<<<<<<< HEAD
+			//_player = new Player();
+=======
 
 			AddChild( _player );
 			_focus = _player;
@@ -34,6 +38,7 @@ namespace GXPEngine
 
 			}
 
+>>>>>>> 7c69aab6556b4a3a196ac24ba2e2a7323dd455bd
 		}
 	}
 }
