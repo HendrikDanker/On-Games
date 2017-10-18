@@ -4,8 +4,12 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workbench ActiveDocument="GXPEngine\PickupType.cs">
+=======
 
   <MonoDevelop.Ide.Workbench ActiveDocument="GXPEngine\Enemy.cs">
+>>>>>>> 7c69aab6556b4a3a196ac24ba2e2a7323dd455bd
     <Files>
       <File FileName="GXPEngine\MyGame.cs" Line="11" Column="22" />
       <File FileName="GXPEngine\Layer.cs" Line="59" Column="49" />
@@ -13,8 +17,13 @@
       <File FileName="GXPEngine\Level.cs" Line="1" Column="1" />
       <File FileName="GXPEngine\Tile.cs" Line="13" Column="3" />
       <File FileName="GXPEngine\LayerType.cs" Line="6" Column="23" />
-      <File FileName="GXPEngine\Entity.cs" Line="20" Column="25" />
+      <File FileName="GXPEngine\Entity.cs" Line="24" Column="25" />
       <File FileName="GXPEngine\Player.cs" Line="16" Column="6" />
+<<<<<<< HEAD
+      <File FileName="GXPEngine\Enemy.cs" Line="31" Column="11" />
+      <File FileName="GXPEngine\Pickup.cs" Line="6" Column="32" />
+      <File FileName="GXPEngine\PickupType.cs" Line="7" Column="3" />
+=======
       <File FileName="GXPEngine\Enemy.cs" Line="29" Column="13" />
 
   <MonoDevelop.Ide.Workbench ActiveDocument="GXPEngine\Player.cs">
@@ -28,6 +37,7 @@
       <File FileName="GXPEngine\GXPEngine\Mathf.cs" Line="227" Column="36" />
       <File FileName="GXPEngine\Player.cs" Line="12" Column="18" />
 
+>>>>>>> 7c69aab6556b4a3a196ac24ba2e2a7323dd455bd
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
