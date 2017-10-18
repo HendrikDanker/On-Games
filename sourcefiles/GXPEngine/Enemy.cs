@@ -28,7 +28,7 @@ namespace GXPEngine
 			if (x < _player.x)
 				xSpeed += enemySpeed;
 			else
-				xSpeed += enemySpeed;
+				xSpeed -= enemySpeed;
 		}
 
 		public float GetDistanceToPlayer { get { return distanceToPlayer; } }
