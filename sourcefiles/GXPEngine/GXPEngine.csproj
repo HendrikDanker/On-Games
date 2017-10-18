@@ -68,6 +68,8 @@
     <Compile Include="Layer.cs" />
     <Compile Include="LevelCreator.cs" />
     <Compile Include="LayerType.cs" />
+
+    <Compile Include="Player.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GXPEngine\" />
