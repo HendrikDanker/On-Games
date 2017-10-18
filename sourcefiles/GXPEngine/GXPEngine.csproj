@@ -62,6 +62,13 @@
     <Compile Include="GXPEngine\Utils\MouseHandler.cs" />
     <Compile Include="GXPEngine\Utils\Time.cs" />
     <Compile Include="GXPEngine\Utils\Utils.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="LevelReader.cs" />
+    <Compile Include="Layer.cs" />
+    <Compile Include="LevelCreator.cs" />
+    <Compile Include="LayerType.cs" />
+
     <Compile Include="Player.cs" />
   </ItemGroup>
   <ItemGroup>
