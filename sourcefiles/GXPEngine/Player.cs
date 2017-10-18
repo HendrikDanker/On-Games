@@ -20,7 +20,7 @@ public class Player : AnimationSprite
 
 	bool movingRight = true;
 	bool running = false;
-
+	bool _isGrounded;
 	int animationFrameDelay = 8;
 	private int animationStep;
 
@@ -163,7 +163,34 @@ public class Player : AnimationSprite
 			y = collisionObject.y + collisionObject.height / 2 + width / 2;
 			return true;
 		}
+<<<<<<< HEAD
+		return true;	}
+	private void applyGravity()
+	{
+		if (ySpeed >= 1.0f && ySpeed < 1.0f)
+		{
+			 ySpeed += 1.0f;
+		}
+		else
+		{
+			ySpeed += 0.5f;
+		}
+
+		if (ySpeed > 32.0f)
+		{
+			ySpeed = 32.0f;
+		}
+
+
+		//if (!TryMove( 0, ySpeed ))
+		//{
+		//	_isGrounded = true;
+		//	ySpeed = 0;
+		//}
+		Console.WriteLine( _isGrounded );
+=======
 		return true;
+>>>>>>> fd697f8b3651678395837a5bf42227417d4aee95
 	}
 
 }
