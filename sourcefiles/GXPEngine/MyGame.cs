@@ -10,8 +10,6 @@ public class MyGame : Game
 		_level = new Level();
 		AddChild( _level );
 
-		_levelCreator = new LevelCreator();
-		AddChild( _levelCreator );
 	}
 
 	void Update()

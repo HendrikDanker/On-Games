@@ -8,6 +8,8 @@ namespace GXPEngine
 		private LevelCreator _levelCreator;
 		public Level()
 		{
+			_levelCreator = new LevelCreator();
+			AddChild( _levelCreator );
 		}
 	}
 }
