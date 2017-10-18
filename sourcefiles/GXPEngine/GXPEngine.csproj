@@ -67,6 +67,7 @@
     <Compile Include="LevelReader.cs" />
     <Compile Include="Layer.cs" />
     <Compile Include="LevelCreator.cs" />
+    <Compile Include="LayerType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GXPEngine\" />

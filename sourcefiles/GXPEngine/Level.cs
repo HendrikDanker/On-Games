@@ -5,10 +5,9 @@ namespace GXPEngine
 {
 	public class Level : GameObject
 	{
-		private LayerHandler _layerHandler;
+		private LevelCreator _levelCreator;
 		public Level()
 		{
-			_layerHandler = new LayerHandler(this);
 		}
 	}
 }

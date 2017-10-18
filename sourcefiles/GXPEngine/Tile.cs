@@ -3,9 +3,13 @@ namespace GXPEngine
 {
 	public class Tile : AnimationSprite
 	{
-		public Tile( string filename, int columns, int rows) : base ( filename, columns,rows)
+		private LayerType _layerType;
+		public Tile( string filename, int columns, int rows, LayerType layerType ) : base( filename, columns, rows )
 		{
-			
+			_layerType = layerType;
 		}
+
+		public LayerType GetLayerType { get { return _layerType; } }
+
 	}
 }
