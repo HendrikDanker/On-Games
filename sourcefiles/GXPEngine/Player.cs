@@ -23,13 +23,7 @@ public class Player : Entity
 	int animationFrameDelay = 8;
 	private int animationStep;
 
-<<<<<<< HEAD
 	public Player() : base( "player.png", 4, 1, EntityType.Player )
-=======
-
-	public Player() : base("player_all.png", 23, 1)
-
->>>>>>> 7c69aab6556b4a3a196ac24ba2e2a7323dd455bd
 	{
 		x = 100;    //Starting Position X
 		y = 600;    //Starting Position Y
@@ -73,8 +67,6 @@ public class Player : Entity
 		}
 		//Moing Left
 		if (Input.GetKey( Key.A ) || Input.GetKey( Key.LEFT ))
-<<<<<<< HEAD
-=======
 		{
 			if (xSpeed > -xSpeedMax)
 			{
@@ -100,12 +92,10 @@ public class Player : Entity
 
 		//Double Jumping
 		if (doubleJumpTime > 0 && ySpeed != 0 && Input.GetKeyDown( Key.SPACE ) && hasJumped == false)
->>>>>>> 7c69aab6556b4a3a196ac24ba2e2a7323dd455bd
+
 		{
 			TryMove( -xSpeed, 0 );
 		}
-<<<<<<< HEAD
-=======
 
 		//Save old Stats for later comparison
 		oldX = x;
@@ -113,90 +103,7 @@ public class Player : Entity
 		oldXSpeed = xSpeed;
 		oldYSpeed = ySpeed;
 
-
-		//bool canMove = true;
-		//foreach (GameObject other in GetCollisions())
-		//{
-
-		//	if (other is Tile)
-		//	{
-		//		Tile tile = other as Tile;
-		//		if (tile.GetLayerType == LayerType.Collidable)
-		//		{
-		//			canMove = canMove && resolveCollision( tile, moveX, moveY );
-		//		}
-		//	}
-		//}
-		//return canMove;
 	}
-
-	private bool manageCollision( GameObject other, float moveX, float moveY )
-	{
-		if (other is Tile)
-		{
-			Tile tile = other as Tile;
-
-			if (tile.GetLayerType == LayerType.Collidable)
-			{
-				return resolveCollision( other as Sprite, moveX, moveY );
-			}
-		}
-		return true;
->>>>>>> 7c69aab6556b4a3a196ac24ba2e2a7323dd455bd
-	}
-
-	private bool resolveCollision( Sprite collisionObject, float moveX, float moveY )
-	{
-		if (moveX > 0)
-		{
-			x = collisionObject.x - collisionObject.width / 2 - width / 2;
-			return false;
-		}
-		if (moveX < 0)
-		{
-			x = collisionObject.x + collisionObject.width / 2 + width / 2;
-			return false;
-		}
-		if (moveY > 0)
-		{
-			y = collisionObject.y - collisionObject.height / 2 - height / 2;
-			return false;
-		}
-		if (moveY < 0)
-		{
-			y = collisionObject.y + collisionObject.height / 2 + width / 2;
-			return true;
-		}
-<<<<<<< HEAD
-		return true;	}
-	private void applyGravity()
-	{
-		if (ySpeed >= 1.0f && ySpeed < 1.0f)
-		{
-			 ySpeed += 1.0f;
-		}
-		else
-		{
-			ySpeed += 0.5f;
-		}
-
-		if (ySpeed > 32.0f)
-		{
-			ySpeed = 32.0f;
-		}
-
-
-		//if (!TryMove( 0, ySpeed ))
-		//{
-		//	_isGrounded = true;
-		//	ySpeed = 0;
-		//}
-		Console.WriteLine( _isGrounded );
-=======
-		return true;
->>>>>>> fd697f8b3651678395837a5bf42227417d4aee95
-	}
-
 }
 
 
