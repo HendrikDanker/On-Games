@@ -24,7 +24,9 @@ public class Player : AnimationSprite
 	int animationFrameDelay = 8;
 	private int animationStep;
 
-	public Player() : base( "player.png", 4, 1 )
+
+	public Player() : base("player_all.png", 23, 1)
+
 	{
 		x = 100;    //Starting Position X
 		y = 600;    //Starting Position Y
@@ -161,6 +163,7 @@ public class Player : AnimationSprite
 			y = collisionObject.y + collisionObject.height / 2 + width / 2;
 			return true;
 		}
+<<<<<<< HEAD
 		return true;	}
 	private void applyGravity()
 	{
@@ -185,6 +188,9 @@ public class Player : AnimationSprite
 		//	ySpeed = 0;
 		//}
 		Console.WriteLine( _isGrounded );
+=======
+		return true;
+>>>>>>> fd697f8b3651678395837a5bf42227417d4aee95
 	}
 
 }

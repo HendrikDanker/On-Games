@@ -11,6 +11,7 @@ namespace GXPEngine
 		public Level()
 		{
 			_levelCreator = new LevelCreator();
+			_player = new Player();
 			AddChild( _levelCreator );
 
 			AddChild( _player );
